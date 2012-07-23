@@ -1,0 +1,15 @@
+Generic menu class.  Has simple error handling.  Can produce console-based menus. 
+The user must create text files and use the filenames as input for the menu constructor.
+
+Constructor:
+
+Menu(std::string displayFile, std::string helpFile);
+
+Display file is the actual menu, helpfile is intended to be what displays if the user 
+enters the help command.
+
+Interface is:
+
+void Menu::print()           //Prints display file to screen
+std::string Menu::get_command()     //Prints out '\>' then waits for user input, returns the 
+                                    // command.
