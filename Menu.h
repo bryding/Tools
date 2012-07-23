@@ -28,7 +28,7 @@ public:
 
     /** Interface **/
     void print_menu() const;
-    void get_command();
+    std::string get_command();
 
 private:
     //Constructor is private because helpFile and displayFile
@@ -38,8 +38,7 @@ private:
     std::string file_to_string(std::ifstream& in_file) const;
     void print_help() const;
 
-    std::string     com,
-                    displayFile,
+    std::string     displayFile,
                     helpFile;
 };
 
