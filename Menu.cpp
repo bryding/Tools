@@ -67,7 +67,8 @@ Menu::Menu(std::string disFile_in, std::string helpFile_in){
 
 }
 
-void Menu::get_command(){
+std::string Menu::get_command(){
+    std::string com;
     std::cout << "\\>";
     std::getline(std::cin, com);
 
@@ -77,4 +78,6 @@ void Menu::get_command(){
         std::getline(std::cin, com);
         std::cout << std::endl;
     }
+    
+    return com;
 }
