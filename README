@@ -13,3 +13,12 @@ Interface is:
 void Menu::print()           //Prints display file to screen
 std::string Menu::get_command()     //Prints out '\>' then waits for user input, returns the 
                                     // command.
+
+
+The error handling class also has a simple interface.  It's constructor takes a string parameter intended
+to be the error message.  Default constructor is private.
+
+Interface:
+
+void Menu_Error::log_error();  //Logs exception along with time and date in menu_error.txt
+void Menu_Error::print();      //Prints out error to std::cerr
